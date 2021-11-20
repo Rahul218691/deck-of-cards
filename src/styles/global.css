@@ -1,0 +1,49 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.App{
+width: 100%;
+background: green;
+height: 100vh;	
+}
+
+.app__buttons{
+	text-align: center;
+}
+
+.app__buttons button{
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+}
+
+.app__deck ,
+.app__shuffled{
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+	/*flex-wrap: wrap;*/
+}
+
+.app__deck .card,
+.app__shuffled .card{
+	margin-bottom: 10px;
+	height: 350px;
+}
+
+.app__deck .card .card-body .card-text,
+.app__shuffled .card .card-body .card-text{
+	text-align: center;
+	font-size: 30px;
+	position: absolute;
+	top: 40%;
+	left: 45%;
+}
+
+.app__deck .card .card-footer,
+.app__shuffled .card .card-footer{
+	display: flex;
+	justify-content: flex-end;
+}
